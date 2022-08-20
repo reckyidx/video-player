@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useRef } from "react";
 
 function App() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    // videoRef.current.play();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="videoContainer">
+        <video
+          ref={videoRef}
+          // src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+          // type="video/mp4"
+          className="videoPlayer"
+        ></video>
+      </div>
+    </>
   );
 }
 
