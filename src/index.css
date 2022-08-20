@@ -22,7 +22,17 @@ body {
   display: flex;
   height: 600px;
   border: 2px solid black;
+  flex-direction: column;
 }
 .videoContainer .videoPlayer {
   margin: 5px;
 }
+.videoContainer .controls{
+  display: flex;
+  align-items: center;
+  justify-content :space-between;
+  margin-top: -250px;
+  max-width: 400px;
+  align-self: center;
+  width: 100%;
+} 
