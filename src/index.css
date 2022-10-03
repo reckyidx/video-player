@@ -26,13 +26,51 @@ body {
 }
 .videoContainer .videoPlayer {
   margin: 5px;
+  background-color: black;
+  height: 100%;
 }
-.videoContainer .controls{
+.videoContainer .controls {
   display: flex;
   align-items: center;
-  justify-content :space-between;
+  justify-content: space-between;
   margin-top: -250px;
   max-width: 400px;
   align-self: center;
   width: 100%;
+}
+
+.videoContainer .progressControl {
+ width: calc(100% - 30px);
+  display: flex;
+  margin-top: 160px;
+  padding-left: 20px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 } 
+.progressControl .videoQuality{
+  width: 50px;
+  font-size: 12px;
+}
+.videoContainer input[type="range"] {
+  -webkit-appearance: none !important;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  height: 4px;
+  width: auto;
+  flex: 1 1 80%;
+  margin-left: 10px;
+  }
+
+/* input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  cursor: pointer;
+  height: 6px;
+  width: calc(100% - 500px) 
+}
+
+input[type="range"]::-moz-range-progress {
+  background: white;
+  width: calc(100% - 500px) 
+}  */

@@ -30,6 +30,14 @@ function App() {
             <Forward10SharpIcon fontSize="large" style={{ color: "#fff" }} />
           </div>
         </div>
+        <div className="progressControl">
+          <select className="videoQuality">
+            <option>360p</option>
+            <option>720p</option>
+            <option>1080p</option>
+         </select>
+          <input type={"range"} min="0" max={"100"}></input>
+        </div>
       </div>
     </>
   );
